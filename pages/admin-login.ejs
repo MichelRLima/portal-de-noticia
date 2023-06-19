@@ -1,0 +1,68 @@
+<html>
+    <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Faça o login</title>
+        </head>
+        <style>
+
+            .titulo{
+                width: 100%;
+                background-color: #610505;
+             border-radius: 10px;
+            }
+            h2{
+                text-align: center;
+                color: white;
+            }
+            h2 a{
+                text-decoration: none;
+                color: white
+            }
+            h2 span{
+                
+                font-weight: lighter;
+            }
+            form{
+                margin-top: 50px;
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            form input{
+                margin: 10px auto;
+                width: 100%;
+                max-width: 300px;
+                
+            }
+            form span{
+                text-align: center;
+               
+            }
+            form input[type=submit]{
+                cursor: pointer;
+                background-color: #610505;
+                color: white;
+                width: 100px;
+                border-radius: 10px;
+            }
+            form input[type=text]{
+                text-align: center;
+            }
+        </style>
+
+        <body>
+            <div class="titulo">
+            <h2><a href="/"><span>Michel</span><b>News</b></a></h2>
+            </div>
+            <form method="post">
+                
+                <span>Usuario de login:</span><input type="text" name="login">
+                <span>Senha:</span><input type="password" name="senha">
+                <input type="submit" name="acao" value="logar"> 
+            </form>
+        </body>
+</html>
