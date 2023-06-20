@@ -10,8 +10,7 @@ const fs = require('fs');
 const Posts = require('./Posts.js');
 
 // Conectando ao banco de dados MongoDB
-mongoose
-  .connect(
+mongoose.connect(
     'mongodb+srv://michelrocha502:root@cluster0.ozgxq3o.mongodb.net/dankicode?retryWrites=true&w=majority',
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
@@ -199,6 +198,7 @@ app.get('/admin/login', (req, res) => {
             image: val.image,
             slug: val.slug,
             categoria: val.categoria,
+            autor: val.autor,
             views: val.views,
           };
         });
