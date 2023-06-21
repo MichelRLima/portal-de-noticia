@@ -150,7 +150,8 @@ app.post('/admin/cadastro', (req, res) => {
 
   Posts.create({
     titulo: req.body.titulo_noticia,
-    image: 'http://localhost:3000/public/images/' + imagem,
+    image: '52.14.95.83:3000/public/images/' + imagem,
+   // image: 'http://localhost:3000/public/images/' + imagem,
     categoria: req.body.categoria,
     conteudo: req.body.noticia,
     slug: req.body.slug,
